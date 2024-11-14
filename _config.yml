@@ -7,10 +7,10 @@
 ### Site Settings ###
 title               : Hyunwoo Park's Resume 
 description         : >-
-                      I am definitely not a corgi!
+                      Trust Your Process!
 baseurl             : ""   # Change to empty quotes if you are hosting your site at <your-username>.github.io directly,
 #                                             otherwise will be hosted at <your-username>.github.io/{{base_url}}
-repository          : hyunwoo7881/hyunwoo7881.github.io                    # Change to <your-username> for github OR, if that doesn't work <your-username>/<your-username>.github.io (or remove it if you don't need remote projects) -- for example, I would put "jnaiman" without the quotes after the ":" here
+repository          : hyunwoo7881                    # Change to <your-username> for github OR, if that doesn't work <your-username>/<your-username>.github.io (or remove it if you don't need remote projects) -- for example, I would put "jnaiman" without the quotes after the ":" here
 open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
 
 
@@ -34,11 +34,11 @@ nav_exclude:                                            # The following paths ar
 
 ### Author Info ###
 author:
-  name              : A. P. Corgi
+  name              : Hyunwoo Park
   image             : https://media.tenor.com/8RcIoWTKYR4AAAAe/scuze-corgi.png
 #  behance           : your_username
 # dribbble          : your_username
-  email             : username@domain.com
+  email             : hwcollege2019@gmail.com
 #  facebook          : your_username
   github            : jnaiman # JPN
 # gitlab            : your_username
