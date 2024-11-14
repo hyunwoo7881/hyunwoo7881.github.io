@@ -1,8 +1,8 @@
 ---
-name: Vega Lite/altair weather Project
+name: Weather Patterns Project
 tools: [Python, HTML, vega-lite]
-image: assets/pngs/cars.png
-description: This is a "showcase" project that uses vega-lite for interactive viz!
+image: assets/pngs/usmap.jpg
+description: This project visualizes key U.S. weather data, exploring temperature, cloud cover, precipitation, and UV index.
 custom_js:
   - vega.min
   - vega-lite.min
@@ -11,23 +11,28 @@ custom_js:
 ---
 
 
-# Visualization 1: Temperature vs. Cloud Cover with Precipitation Type Histogram
+## Visualization 1: Temperature vs. Cloud Cover with Precipitation Type Histogram
+<br><br>
 
 This first visualization examines the relationship between **temperature** and **cloud cover**, focusing on how temperature (high, mid, and low) interacts with cloud cover, and how this relationship correlates with precipitation type (rain and snow). Additionally, a histogram breaks down the distribution of rain and snow for each temperature range, giving a deeper insight into how temperature affects precipitation.
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/graph1.json" style="width: 100%"></vegachart>
 
+<br><br>
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/graph2.json" style="width: 100%"></vegachart>
 
+<br><br>
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/graph3.json" style="width: 100%"></vegachart>
+<br><br>
+
 ### Design Choices
 
 - **Scatter Plot**: The scatter plot visualizes the relationship between **cloud cover percentage** and **temperature**. The y-axis represents temperature (high, mid, or low), and the x-axis represents cloud cover percentage. The temperature ranges are adjusted to ensure consistency across the plot, allowing for an accurate comparison of how different temperatures interact with cloud cover.
 - **Precipitation Type Color Encoding**: The precipitation type is encoded using a custom color scale:
   - Rain: Light blue (#aec7e8)
-  - Snow: Gray (#a7a7a7)
+  - Snow: Gray       (#a7a7a7)
 - **Histogram**: The histogram displays the count of rain and snow observations across different temperature ranges, visually breaking down the distribution of precipitation type for each temperature. This makes it easier to analyze how temperature influences precipitation type.
 
 ### Data Transformations
@@ -42,8 +47,8 @@ This first visualization examines the relationship between **temperature** and *
 - **Dynamic Filtering**: The interaction also allows for a **dynamic filtering experience**, where users can adjust the temperature and cloud cover ranges and immediately observe how precipitation types (rain and snow) change in response. This helps to drill down into the data and discover more specific patterns related to weather conditions.
 
 ---
-
-# Visualization 2: UV Index Distribution Across U.S. Locations
+<br><br>
+## Visualization 2: UV Index Distribution Across U.S. Locations
 
 This visualization maps the distribution of **UV index values** across various U.S. counties, providing a geographic view of UV exposure across the country. The map allows users to visually assess how the UV index varies geographically, highlighting areas with higher or lower UV exposure.
 
@@ -65,7 +70,7 @@ This visualization maps the distribution of **UV index values** across various U
 - **Zoom and Pan**: Users can zoom in and out of the map and pan across different regions of the country. While this plot does not have complex filtering interactions like the first one, the ability to explore different parts of the country visually adds a layer of interactivity. Users can zoom into specific areas to see how the UV index varies in those regions and gain a deeper understanding of the geographic distribution of UV exposure.
 
 ---
-
+<br><br>
 ### Additional Notes on Interactivity and Rubric Considerations
 
 - **Plot 1** stands out for its **interactive features**, particularly the **brush selection** tool, which allows users to dynamically filter both the scatter plot and histogram based on temperature and cloud cover ranges. This feature makes it easier for users to analyze specific subsets of the data and observe how temperature correlates with precipitation type. This interactivity is an important factor in earning high marks for **user engagement** and **data exploration** in the rubric.
@@ -76,13 +81,10 @@ In both visualizations, the design choices and interactivity were made to enhanc
 
 
 <!-- these are written in a combo of html and liquid -->
-
 <div class="left">
-{% include elements/button.html link="https://github.com/vega/vega/blob/main/docs/data/cars.json" text="The Data" %}
+{% include elements/button.html link="https://github.com/hyunwoo7881/hyunwoo7881.github.io/blob/main/data/bfro_reports_fall2022.csv" text="The Data" %}
 </div>
-
 <div class="right">
-{% include elements/button.html link="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/hyunwoo7881/hyunwoo7881.github.io/blob/main/python_notebooks/Workbook-4.ipynb" text="The Analysis" %}
 </div>
-
 
