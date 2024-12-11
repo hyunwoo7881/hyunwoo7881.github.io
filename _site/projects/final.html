@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+  Updates for JPN Fall 2024
+  FALL2024ID49073
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Exploring Financial Behavior and Education Project">
+  <meta property="og:description" content="This project visualizes key U.S. weather data, exploring temperature, cloud cover, precipitation, and UV in$">
+  <meta property="og:image" content="assets/pngs/threepics.png">
+
+  <title>Exploring Financial Behavior and Education Project</title>
+  <meta name="description" content="This project visualizes key U.S. weather data, exploring temperature, cloud cover, precipitation, and UV in$">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>Hyunwoo Park's Resume</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/license_trends">My GitHub Pages with Streamlit</a>
+
+      <a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="the-financial-impact-of-education-during-the-2008-2010-crisis-a-data-driven-exploration">The Financial Impact of Education during the 2008-2010 Crisis: A Data-Driven Exploration</h1>
+<p><em>By Joseph (Hyunwoo) Park</em></p>
+
+<p><strong>Data Link:</strong><br />
+<a href="https://archive.ics.uci.edu/dataset/222/bank+marketing">Bank Marketing Dataset (2008-2010)</a></p>
+
+<p>The dataset contains demographic and financial data from over 45,000 bank customers targeted by a marketing campaign between 2008 and 2010, a period marked by the global financial crisis. It includes crucial features like age, education level, job type, marital status, and average yearly balance, shedding light on how economic conditions affected financial behavior across different educational backgrounds.</p>
+
+<hr />
+
+<h2 id="central-interactive-visualization">Central Interactive Visualization:</h2>
+
+<p><br /><br /></p>
+
+<vegachart schema-url="/assets/json/chart.json" style="width: 100%"></vegachart>
+
+<p><br /><br /></p>
+
+<p>The core of this article is an interactive <strong>scatter plot</strong> that illustrates the relationship between <strong>age</strong> and <strong>average yearly balance</strong> across various education levels (primary, secondary, and tertiary). Users can filter the data by selecting an education level from the legend, which helps explore how financial behavior differs across these groups.</p>
+
+<p>Additionally, users can <strong>select a range</strong> on the scatter plot by dragging the mouse. As the selection changes, the <strong>bar chart</strong> below will update to show the count of records for each education level within the selected range.</p>
+
+<p>This interactive feature allows users to explore financial behavior patterns while highlighting how education shapes financial resilience during economic downturns.</p>
+
+<hr />
+
+<h2 id="contextual-visualizations">Contextual Visualizations:</h2>
+
+<p><br /><br /></p>
+
+<p><img src="/assets/pngs/threepics.png" alt="Three Pics" style="width: 100%;" /></p>
+
+<p><br /><br /></p>
+
+<h3 id="1-gdp-growth-and-education-expenditure-2008-2010">1. <strong>GDP Growth and Education Expenditure (2008-2010):</strong></h3>
+
+<p>This visualization ties the fluctuations in GDP growth and education spending to financial behavior during the 2008-2010 period.</p>
+
+<ul>
+  <li>The <strong>GDP Growth</strong> line (blue) shows the sharp economic dip during the financial crisis, reflecting the financial struggles faced by individuals, particularly those with lower education levels.</li>
+  <li>The <strong>Education Expenditure</strong> line (yellow) highlights changes in government funding for education, a crucial factor in understanding long-term financial security for those in educational systems during the crisis.</li>
+</ul>
+
+<p>These trends suggest that the economic instability caused by the crisis disproportionately impacted individuals with lower educational attainment.</p>
+
+<h3 id="2-financial-behavior-by-education-level-2008-2010">2. <strong>Financial Behavior by Education Level (2008-2010):</strong></h3>
+
+<p>This visualization further examines financial behavior across education levels. It reveals how education influenced financial security during the crisis:</p>
+
+<ul>
+  <li><strong>Tertiary-educated</strong> individuals tended to maintain higher balances, likely due to more stable income sources and job security.</li>
+  <li><strong>Primary-educated</strong> individuals had lower and more scattered balances, demonstrating increased vulnerability to financial instability.</li>
+</ul>
+
+<p>This graph emphasizes that education served as a protective factor against financial hardship during the 2008-2010 crisis.</p>
+
+<h3 id="3-gdp-per-capita-2008-2010">3. <strong>GDP per Capita (2008-2010):</strong></h3>
+
+<p>This final visualization shows how the global recession impacted <strong>GDP per capita</strong> and highlights how macroeconomic changes affected financial behavior. The drop in GDP per capita directly correlates with increased financial hardship, especially among individuals with lower educational backgrounds.</p>
+
+<p>This plot strengthens the findings from the previous visualizations by showing how economic factors like GDP and education expenditure shaped financial outcomes for individuals in the dataset.</p>
+
+<hr />
+
+<h2 id="write-up">Write-Up:</h2>
+
+<h3 id="understanding-the-dataset-2008-2010"><strong>Understanding the Dataset (2008-2010):</strong></h3>
+
+<p>The <strong>Bank Marketing Dataset</strong> provides valuable insights into the financial behavior of individuals during the 2008-2010 period, a time defined by the global financial crisis. The dataset includes 45,211 individuals and contains both <strong>numerical</strong> (e.g., age, average yearly balance) and <strong>categorical</strong> data (e.g., education level, job type).</p>
+
+<p>The educational background of an individual serves as a key indicator of their financial resilience, especially in times of economic uncertainty.</p>
+
+<h3 id="exploring-the-interactive-visualization-2008-2010-context"><strong>Exploring the Interactive Visualization (2008-2010 Context):</strong></h3>
+
+<p>The central <strong>scatter plot</strong> in the interactive dashboard allows users to explore how <strong>age</strong> correlates with <strong>average yearly balance</strong>, segmented by education level. Key insights include:</p>
+
+<ul>
+  <li><strong>Tertiary-educated</strong> individuals generally have higher balances, suggesting more stable financial conditions during the crisis.</li>
+  <li><strong>Primary-educated</strong> individuals exhibit lower balances, indicating greater vulnerability to financial strain.</li>
+</ul>
+
+<p>These findings align with broader societal trends, where higher education often correlates with better financial security, particularly during economic instability.</p>
+
+<h3 id="connecting-the-data-to-public-understanding"><strong>Connecting the Data to Public Understanding:</strong></h3>
+
+<p>The <strong>contextual visualizations</strong> provide further insights into the connection between education and financial stability:</p>
+
+<ul>
+  <li><strong>GDP Growth and Education Expenditure</strong>: The decline in GDP during the financial crisis reflects the broader economic challenges faced by individuals, especially those with lower education levels.</li>
+  <li><strong>Financial Behavior by Education Level</strong>: The contrast between financial behaviors across education levels highlights education as a protective factor against financial instability.</li>
+  <li><strong>GDP per Capita</strong>: A decrease in GDP per capita correlates with greater financial difficulties for individuals with lower education, emphasizing the link between macroeconomic trends and personal financial outcomes.</li>
+</ul>
+
+<p>These visualizations clarify how macroeconomic conditions and educational attainment are intertwined, with education playing a crucial role in shaping financial resilience during times of crisis.</p>
+
+<hr />
+
+<h2 id="conclusion">Conclusion:</h2>
+
+<p>The combination of <strong>interactive visualizations</strong> and <strong>contextual charts</strong> allows for a deep exploration of how <strong>education</strong> and <strong>economic trends</strong> intersect to influence financial behavior. The 2008-2010 period, marked by the global financial crisis, shows that <strong>higher education</strong> helped individuals maintain better financial stability, while those with <strong>lower education levels</strong> were more vulnerable to financial hardships. By linking education expenditure, GDP growth, and financial outcomes, this article highlights how <strong>education</strong> is not only a personal asset but also a key factor in navigating economic downturns.</p>
+
+<hr />
+
+<h3 id="sources-for-contextual-visualizations"><strong>Sources for Contextual Visualizations:</strong></h3>
+<ul>
+  <li><strong>The Bank Marketing Dataset</strong>: “Bank Marketing Dataset.” UCI Machine Learning Repository. Available at <a href="https://archive.ics.uci.edu/dataset/222/bank+marketing">UCI Dataset</a>.</li>
+  <li><strong>The World Bank Data</strong>: “World Development Indicators.” The World Bank. Available at <a href="https://databank.worldbank.org/source/world-development-indicators">World Bank Data</a>.</li>
+</ul>
+
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Hyunwoo Park</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:hwcollege2019@gmail.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/jnaiman"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.youtube.com/your_channel_name"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#ff0000'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-youtube fa-1x"></i>
+    </a>
+
+</div>
+
+  Theme by <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a> and <a href="https://github.com/4dcu-be/4dcu.be">4dcu.be</a>.
+
+  
+<!--<small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+-->
+
+</footer>
+
+
+<!-- Custom page specific js files -->
+  
+    <script src='/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/justcharts.js' type="text/javascript"></script>
+  
+
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+<!--
+end of checks! JPN
+-->
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
