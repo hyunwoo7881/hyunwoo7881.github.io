@@ -1,8 +1,8 @@
 ---
 name: SQL 분석 프로젝트 - eCommerce
 tools: [SQL, Tableau] 
-image: assets/pngs/ecommerce_썸.jpg
-description: This project visualizes key U.S. weather data, exploring temperatu$
+image: assets/pngs/ecommerce_썸.jpeg
+description: This project visualizes key U.S. ecommerce metrics, exploring user behavioral data
 custom_js:
   - vega.min
   - vega-lite.min
