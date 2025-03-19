@@ -1,6 +1,6 @@
 ---
 name: SQL 분석 프로젝트 - Spotify
-tools: [Python, HTML, vega-lite]
+tools: [SQL, Tableau]
 image: assets/pngs/usmap.jpg
 description: This project visualizes key U.S. weather data, exploring temperatu$
 custom_js:
