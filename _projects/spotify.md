@@ -351,3 +351,9 @@ ORDER BY Gender
 <br><br>
 <img src="{{ site.baseurl }}/assets/pngs/spotify/sp18.png" alt="사진18" style="width: 80%;">
 > → 많은 수의 여성 사용자들은 현재의 음악 추천 시스템에 대해 만족하는것처럼 보임. 하지만 3점에 가장 많은 140명이 있다? 무슨 의미 일까? (추가적인 데이터 수집이 필요해보임)
+
+
+
+<div class="left">
+{% include elements/button.html link="https://www.kaggle.com/datasets/meeraajayakumar/spotify-user-behavior-dataset" text="The Data" %}
+</div>
